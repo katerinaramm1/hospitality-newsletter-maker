@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Create My Hospitality Newsletter — Private Prototype</title>
+<title>Create My Hospitality Newsletter</title>
 <style>
 :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:#34383D;background:#F8F7F5;font-size:14px}*{box-sizing:border-box}body{margin:0}button,input,textarea,select{font:inherit}button{cursor:pointer}a{color:inherit}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #E0A79A;outline-offset:2px}.appbar{height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 25px;background:white;border-bottom:1px solid #e5e9ee;gap:14px}.brand{display:flex;align-items:center;gap:12px;min-width:0}.logo{background:#C98270;color:white;border-radius:12px;width:41px;height:41px;display:grid;place-items:center;font-size:23px;font-weight:700}.brand strong{font-size:17px;letter-spacing:-.4px}.brand small{display:block;color:#85858A;font-size:11px;margin-top:3px}.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.btn{border:1px solid #d8e0e5;background:#fff;color:#293b45;border-radius:9px;padding:10px 13px;font-weight:650;font-size:12px;white-space:nowrap}.btn:hover{background:#F2E9E5}.btn.primary{background:#C98270;border-color:#C98270;color:#fff}.btn.primary:hover{background:#A96453}.btn.danger{color:#a33438}.layout{display:grid;grid-template-columns:minmax(340px,415px) minmax(0,1fr);height:calc(100vh - 127px)}aside{overflow:auto;border-right:1px solid #dde4e9;background:#fff;padding:18px 21px 30px}.preview-area{overflow:auto;padding:25px 30px 50px;background:radial-gradient(circle at top,#F2E9E5,#F8F7F5 65%)}.tabs{display:flex;padding:3px;background:#F2E9E5;border:1px solid #e8edf0;border-radius:10px;gap:3px;margin-bottom:19px}.tab{flex:1;background:transparent;border:0;border-radius:8px;padding:10px 5px;font-weight:650;color:#85858A;font-size:12px}.tab.active{background:#fff;color:#B66F5D;box-shadow:0 1px 5px #0000000d}.panel{display:none}.panel.active{display:block}.section-title{font-size:16px;margin:0 0 5px}.muted{color:#85858A;font-size:12px;line-height:1.6}.field{margin-top:15px}.field label{display:block;font-size:11px;font-weight:750;letter-spacing:.15px;margin-bottom:7px;color:#455461}.field input,.field select,.field textarea{background:#fff;border:1px solid #dae2e7;border-radius:8px;padding:10px 11px;width:100%;outline:0;min-width:0;color:#223540}.field textarea{min-height:85px;line-height:1.55;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:#C98270;box-shadow:0 0 0 3px #F2E9E5}.field small{display:block;color:#85858A;font-size:11px;margin-top:5px;line-height:1.45}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:10px}.swatches{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:14px}.swatch{border:1px solid #e2e8ec;border-radius:10px;padding:9px;text-align:left;background:white}.swatch.selected{border:2px solid #214d60;padding:8px}.swatch-bars{height:40px;border-radius:5px;display:flex;overflow:hidden;margin-bottom:8px}.swatch-bars span:first-child{flex:2}.swatch-bars span:nth-child(2){flex:1}.swatch-bars span:last-child{flex:1}.swatch small{font-weight:700;color:#4c5e69}.blocklist{display:flex;flex-direction:column;gap:8px;margin-top:17px}.block{border:1px solid #e2e8ec;background:white;border-radius:10px;display:flex;align-items:center;gap:8px;padding:10px}.block.active{border-color:#C98270;background:#FDF7F4}.blockmain{flex:1;text-align:left;border:0;background:none;min-width:0}.blockmain strong{font-size:12px;display:block}.blockmain small{font-size:11px;color:#84929b;display:block;margin-top:4px}.mini{background:#fff;border:1px solid #dfe6ea;color:#425766;border-radius:6px;min-width:27px;height:27px;font-size:13px}.mini:hover{background:#eef4f7}.mini:disabled{opacity:.3;cursor:not-allowed}.addgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:15px}.addgrid .btn{text-align:left}.editor{border-top:1px solid #e7edef;margin-top:19px;padding-top:20px}.bar{display:flex;align-items:center;justify-content:space-between;gap:10px}.preview-controls{display:flex;align-items:center;justify-content:space-between;margin:0 auto 16px;max-width:900px;gap:12px}.preview-controls strong{font-size:13px}.viewgroup{background:#fff;border:1px solid #dde5e9;border-radius:9px;padding:3px;display:flex;gap:4px}.viewgroup button{border:0;background:none;color:#6b7e89;font-size:12px;border-radius:6px;padding:8px 14px}.viewgroup button.active{background:#C98270;color:white}.frame-wrap{margin:auto;background:#fff;max-width:900px;box-shadow:0 13px 45px #29495b1c;transition:max-width .25s;border:1px solid #e0e7eb;border-radius:8px;overflow:hidden}.frame-wrap.mobile{max-width:390px}.email-frame{width:100%;height:1100px;border:0;display:block;background:white}.hint{padding:10px 15px;background:#F2E9E5;border-radius:8px;font-size:11px;color:#6E5E59;margin-top:16px;line-height:1.6}.alert{padding:12px 13px;border-radius:9px;border:1px solid #f0dbad;background:#fffbef;color:#786138;font-size:12px;line-height:1.6;margin-top:13px}.outline{border:1px dashed #bfcfd6;border-radius:9px;padding:13px;font-size:12px;color:#5a7380;margin-top:12px}.pill{background:#F2E9E5;color:#9A594A;border-radius:20px;font-size:10px;padding:5px 8px;font-weight:750}.footerinfo{font-size:11px;color:#81909b;margin-top:16px;line-height:1.6}.hide{display:none!important}.status{padding:9px 12px;border-radius:8px;background:#F2E9E5;color:#9A594A;font-size:12px;display:none;position:fixed;bottom:23px;right:24px;z-index:10;box-shadow:0 5px 20px #0002}.status.show{display:block}.title-small{font-size:12px;text-transform:uppercase;letter-spacing:.8px;color:#8a9ba4;margin:18px 0 8px}.prose{font-size:12px;line-height:1.65;color:#61707a}.drop{border:2px dashed #d4e1e5;border-radius:9px;padding:12px;background:#f8fbfc}.drop input{border:0;padding:0;background:transparent;font-size:11px}.dangerbtn{border-color:#edc2c2;color:#a14044}.mobilebottom{display:none}@media(max-width:1050px){.layout{grid-template-columns:355px minmax(0,1fr)}.appbar{height:auto;min-height:70px;padding:12px 15px}.actions{justify-content:flex-end}.btn{padding:9px}}@media(max-width:760px){.appbar{align-items:flex-start}.brand small{max-width:130px}.layout{display:block;height:auto}aside{height:auto;max-height:none;padding:15px}.preview-area{padding:18px 12px 40px}.frame-wrap{max-width:100%}.actions .import-label,.actions .saveproject{display:none}.preview-controls{flex-wrap:wrap}.mobilebottom{display:block}}@media print{.appbar,aside,.preview-controls,.hint{display:none}.layout{display:block}.preview-area{padding:0}.frame-wrap{box-shadow:none;border:0}}
 /* Mediterranean blue complements the original terracotta and warm gray UI. */
@@ -26,10 +26,79 @@
 .actions #resetCurrent,.actions #resetAll{border:1px solid #B87868;background:#FFF9F6;color:#8B4E42;font-weight:700}
 .actions #resetAll{background:#fff;color:#7A6260;border-color:#D7C9C5}
 .actions #resetCurrent:hover,.actions #resetAll:hover{background:#F2E9E5}
+
+/* Editor-only theme: exported newsletters and isolated iframe content remain unchanged. */
+:root{color-scheme:light}
+body[data-ui-theme="dark"]{color-scheme:dark;background:#191D24;color:#ECEAF0}
+body[data-ui-theme="dark"] .appbar,
+body[data-ui-theme="dark"] .modebar,
+body[data-ui-theme="dark"] aside{background:#242933;color:#ECEAF0;border-color:#404753}
+body[data-ui-theme="dark"] .preview-area{background:radial-gradient(circle at top,#303746,#1B2028 70%)}
+body[data-ui-theme="dark"] .brand small,
+body[data-ui-theme="dark"] .muted,
+body[data-ui-theme="dark"] .field small,
+body[data-ui-theme="dark"] .footerinfo,
+body[data-ui-theme="dark"] .prose{color:#B4BECA}
+body[data-ui-theme="dark"] .btn:not(.primary),
+body[data-ui-theme="dark"] .mode-choice:not(.active),
+body[data-ui-theme="dark"] .mini,
+body[data-ui-theme="dark"] .swatch,
+body[data-ui-theme="dark"] .block,
+body[data-ui-theme="dark"] .christmas-panel .theme-option,
+body[data-ui-theme="dark"] .viewgroup,
+body[data-ui-theme="dark"] .viewgroup button:not(.active){background:#303743;color:#ECEAF0;border-color:#505969}
+body[data-ui-theme="dark"] .btn:not(.primary):not(.example-btn):hover,
+body[data-ui-theme="dark"] .mode-choice:not(.active):hover,
+body[data-ui-theme="dark"] .mini:hover{background:#3A4859;color:#fff}
+body[data-ui-theme="dark"] .example-btn{background:#513B3A!important;border-color:#B97D70!important;color:#FFE2D9!important}
+body[data-ui-theme="dark"] .tabs{background:#303743;border-color:#505969}
+body[data-ui-theme="dark"] .tab{color:#BFC6D1}
+body[data-ui-theme="dark"] .tab.active{background:#475669;color:#FFF}
+body[data-ui-theme="dark"] .field label,
+body[data-ui-theme="dark"] .section-title,
+body[data-ui-theme="dark"] .title-small{color:#DCE2E8}
+body[data-ui-theme="dark"] .field input,
+body[data-ui-theme="dark"] .field textarea,
+body[data-ui-theme="dark"] .field select,
+body[data-ui-theme="dark"] input:not([type="checkbox"]):not([type="color"]):not([type="file"]),
+body[data-ui-theme="dark"] textarea,
+body[data-ui-theme="dark"] select{background:#171D26!important;color:#F0F2F5!important;border-color:#566170!important}
+body[data-ui-theme="dark"] input::placeholder,
+body[data-ui-theme="dark"] textarea::placeholder{color:#A5AFBD}
+body[data-ui-theme="dark"] .field input:focus,
+body[data-ui-theme="dark"] .field textarea:focus,
+body[data-ui-theme="dark"] .field select:focus{border-color:#75B0D0!important;box-shadow:0 0 0 3px #326C8355!important}
+body[data-ui-theme="dark"] .block.active,
+body[data-ui-theme="dark"] .christmas-panel .theme-option.active{background:#493939;border-color:#D39A8A}
+body[data-ui-theme="dark"] .blockmain,
+body[data-ui-theme="dark"] .blockmain strong{color:#EFF0F3}
+body[data-ui-theme="dark"] .swatch small{color:#E3E6ED}
+body[data-ui-theme="dark"] .hint,
+body[data-ui-theme="dark"] .inline-help,
+body[data-ui-theme="dark"] .traffic-panel,
+body[data-ui-theme="dark"] .christmas-tip,
+body[data-ui-theme="dark"] .outline,
+body[data-ui-theme="dark"] .drop{background:#303743;color:#E0E5EB;border-color:#505969}
+body[data-ui-theme="dark"] .traffic-panel p,
+body[data-ui-theme="dark"] .traffic-status{color:#BBC9D3}
+body[data-ui-theme="dark"] .traffic-count{color:#98CBDF}
+body[data-ui-theme="dark"] .pill{background:#513E3B;color:#FFD1C2}
+body[data-ui-theme="dark"] .status{background:#475669;color:#FFF}
+body[data-ui-theme="dark"] .preview-controls strong{color:#DCECF4}
+body[data-ui-theme="dark"] .frame-wrap{border-color:#4A5260;box-shadow:0 14px 44px #0008}
+body[data-ui-theme="dark"] .viewgroup button.active{background:#326C83;color:#FFF}
+body[data-ui-theme="dark"] .alert{background:#3B3425;color:#F4E4BD;border-color:#69573A}
+body[data-ui-theme="dark"] .editor{border-color:#505969}
+body[data-ui-theme="dark"] .social-grid,
+body[data-ui-theme="dark"] .social-panel{border-color:#505969}
+#uiThemeToggle{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-width:116px}
+body[data-ui-theme="dark"] #uiThemeToggle{background:#3A4554;color:#FFF;border-color:#75859A}
+@media(max-width:760px){#uiThemeToggle{min-width:0}}
+
 </style>
 </head>
 <body>
-<header class="appbar"><div class="brand"><div class="logo">✦</div><div><strong>Create My Hospitality Newsletter</strong><small>FREE NEWSLETTER & SEASONAL CARD STUDIO</small></div></div><div class="actions"><button class="btn example-btn" id="loadExample">✦ Load Example Newsletter</button><button class="btn" id="resetCurrent" type="button" title="Start fresh in the selected creator">↺ Reset Current Design</button><button class="btn" id="resetAll" type="button" title="Erase both local drafts">↺ Reset All Designs</button><button class="btn saveproject" id="saveProject">↓ Project backup</button><label class="btn import-label" style="cursor:pointer">↑ Open project<input type="file" id="importProject" accept=".json,application/json" hidden></label><button class="btn" id="downloadHtml">↓ HTML</button><button class="btn primary" id="downloadZip">↓ Download ZIP</button></div></header>
+<header class="appbar"><div class="brand"><div class="logo">✦</div><div><strong>Create My Hospitality Newsletter</strong><small>FREE NEWSLETTER & SEASONAL CARD STUDIO</small></div></div><div class="actions"><button class="btn" id="uiThemeToggle" type="button" aria-label="Switch to dark appearance" aria-pressed="false">☾ Dark mode</button><button class="btn example-btn" id="loadExample">✦ Load Example Newsletter</button><button class="btn" id="resetCurrent" type="button" title="Start fresh in the selected creator">↺ Reset Current Design</button><button class="btn" id="resetAll" type="button" title="Erase both local drafts">↺ Reset All Designs</button><button class="btn saveproject" id="saveProject">↓ Project backup</button><label class="btn import-label" style="cursor:pointer">↑ Open project<input type="file" id="importProject" accept=".json,application/json" hidden></label><button class="btn" id="downloadHtml">↓ HTML</button><button class="btn primary" id="downloadZip">↓ Download ZIP</button></div></header>
 <nav class="modebar" aria-label="Choose creator mode"><button id="modeNewsletter" class="mode-choice active" type="button">✉ Newsletter Builder</button><button id="modeChristmas" class="mode-choice" type="button">✦ Create Your Christmas Card <span class="season-tag">FREE · 2026</span></button></nav>
 <div class="layout"><aside>
 <div class="newsletter-panel"><div class="tabs"><button class="tab active" data-tab="design">01 · Design</button><button class="tab" data-tab="content">02 · Content</button><button class="tab" data-tab="assistant">03 · AI Help</button></div>
@@ -77,7 +146,8 @@
     <div><h3 id="ebookTitle" style="font-size:14px;color:#34383D;margin:0 0 6px">Free Hospitality Newsletter Guide</h3>
     <p style="font-size:12px;color:#59616B;margin:0 0 12px">New to newsletters? Discover practical writing, design and sending tips for hotels, villas and small businesses, plus a quick tutorial for this builder.</p></div>
   </div>
-  <a href="assets/Hospitality_Newsletter_Guide_2026.pdf" download="Hospitality_Newsletter_Guide_2026.pdf" type="application/pdf" style="display:block;text-align:center;background:#326C83;color:#FFFFFF;text-decoration:none;border-radius:9px;padding:12px 10px;font-size:12px;font-weight:750">↓ Download the Free E-book (PDF)</a>
+  <a href="assets/Hospitality_Newsletter_Guide_2026.pdf" download="Hospitality_Newsletter_Guide_2026.pdf" type="application/pdf" style="display:block;text-align:center;background:#326C83;color:#FFFFFF;text-decoration:none;border-radius:9px;padding:12px 10px;font-size:12px;font-weight:750">↓ Download the Light E-book (PDF)</a>
+  <a href="assets/Hospitality_Newsletter_Guide_2026_Dark_Edition.pdf" download="Hospitality_Newsletter_Guide_2026_Dark_Edition.pdf" type="application/pdf" style="display:block;text-align:center;background:#252D38;color:#FFFFFF;text-decoration:none;border:1px solid #586778;border-radius:9px;padding:12px 10px;font-size:12px;font-weight:750;margin-top:9px">☾ Download the Dark E-book (PDF)</a>
   <p style="font-size:11px;color:#85858A;margin:10px 0 0">No registration required · Opens as a PDF if your browser does not download automatically.</p>
 </section><div class="footerinfo">Free to use · Drafts stay in this browser · Published page visits and generic feature events are counted with GoatCounter · No email-sending integration.<br><a href="privacy.html" target="_blank" rel="noopener" style="display:inline-block;margin:7px 0;font-weight:750;color:#326C83;text-decoration:underline;text-underline-offset:3px">🔒 Privacy &amp; Your Data</a><br><a id="helpLink" href="mailto:katerinaramm@zohomail.eu?subject=Newsletter%20Studio%20Help">Please share your feedback or suggestions — email us ↗</a><div class="credit">Created by <a href="https://x.com/katerinaramm1" target="_blank" rel="noopener noreferrer">@katerinaramm1</a> with the help of AI.</div></div>
 </aside>
@@ -354,5 +424,24 @@ $('#resetAll').onclick=async()=>{
 restoreChristmas();
 restore();
 setupPageViewCounter();
+</script>
+<script>
+// UI appearance preference is independent of the newsletter and seasonal-card designs.
+(function initEditorTheme(){
+  const key='hospitality-newsletter-ui-theme-v1';
+  const button=document.getElementById('uiThemeToggle');
+  let stored='light';
+  try { stored=localStorage.getItem(key)||'light'; } catch(_) {}
+  function apply(theme){
+    const dark=theme==='dark';
+    document.body.dataset.uiTheme=dark?'dark':'light';
+    button.textContent=dark?'☀ Light mode':'☾ Dark mode';
+    button.setAttribute('aria-label',dark?'Switch to light appearance':'Switch to dark appearance');
+    button.setAttribute('aria-pressed',String(dark));
+    try { localStorage.setItem(key,dark?'dark':'light'); } catch(_) {}
+  }
+  apply(stored);
+  button.addEventListener('click',()=>apply(document.body.dataset.uiTheme==='dark'?'light':'dark'));
+})();
 </script>
 </body></html>
